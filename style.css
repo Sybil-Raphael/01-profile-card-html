@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Open+Sans:wght@400;600&display=swap');
+
+body {
+  background-color: #8dd3f9;
+  font-family: 'Open Sans', 'Segoe UI', 'Arial', 'Helvetica Neue', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Enhanced geometric gradient pattern, more dispersed */
+  background-image:
+    radial-gradient(circle at 10% 15%, #b3e0fc 40px, transparent 80px),
+    radial-gradient(circle at 80% 10%, #d1f3ff 60px, transparent 120px),
+    radial-gradient(circle at 70% 80%, #bee5ff 70px, transparent 140px),
+    radial-gradient(circle at 30% 70%, #e3f0fc 50px, transparent 100px),
+    radial-gradient(circle at 90% 60%, #b3e0fc 30px, transparent 80px),
+    linear-gradient(120deg, #8dd3f9 60%, #e3f0fc 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  background: #bee5ff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  border: 2px solid #8cd0fa;
+  padding: 44px 48px 36px 48px;
+  max-width: 540px;
+  width: 100%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.6rem;
+  margin-top: 0;
+  color: #001f4d;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 12px;
+  color: #aca9a9;
+  font-family: inherit;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  color: #003366;
+  font-family: inherit;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1rem;
+  margin-top: 18px;
+  color: #aca9a9; /* match h2 color */
+  font-family: inherit;
+  font-weight: 500;
+}
+
+p {
+  margin: 18px 0 18px 0;
+  font-size: 1.05rem;
+  color: #222;
+  font-family: inherit;
+}
+
+ul {
+  padding-left: 0;
+  list-style-position: inside;
+  margin: 18px 0;
+}
+
+ul li {
+  display: block;
+  margin: 14px 0;
+}
+
+a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+  justify-content: center;
+  font-weight: 500;
+  transition: color 0.2s;
+  font-family: inherit;
+}
+
+a:hover {
+  color: #0077b6;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 24px;
+  margin-top: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+  text-align: initial;
+}
+
+.contact-info,
+.links-list {
+  flex: 1 1 180px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  section {
+    flex-direction: column;
+    gap: 0;
+  }
+  .contact-info,
+  .links-list {
+    text-align: center;
+  }
+}
